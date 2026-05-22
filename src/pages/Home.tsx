@@ -108,7 +108,7 @@ const Home: React.FC = () => {
                   <h3 style={{ margin: '0.5rem 0 1rem', color: 'white' }}>{t.name}</h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', opacity: 0.6, fontSize: '0.9rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><MapPin size={14} /> {t.location}</div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Calendar size={14} /> {new Date(t.startDate).toLocaleDateString()}</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Calendar size={14} /> {new Date(t.startDate).toLocaleDateString('es-ES', { timeZone: 'UTC' })}</div>
                   </div>
                 </div>
               </Link>

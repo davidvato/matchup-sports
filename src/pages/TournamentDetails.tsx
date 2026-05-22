@@ -326,7 +326,7 @@ const TournamentDetails: React.FC = () => {
   const formatDate = (dateStr: string) => {
     if (!dateStr) return '';
     return new Date(dateStr).toLocaleDateString('es-ES', {
-      day: 'numeric', month: 'long', year: 'numeric'
+      day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'
     });
   };
 
