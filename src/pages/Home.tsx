@@ -58,12 +58,12 @@ const Home: React.FC = () => {
           maxWidth: '600px',
           margin: '0 auto'
         }}>
-          La plataforma definitiva para la gestión y organización de torneos deportivos de alto nivel.
+          La plataforma definitiva con la cual gestionamos y organizamos tus torneos deportivos de alto nivel.
         </p>
-        
+
         <div style={{ marginTop: isMobile ? '2rem' : '3rem', display: 'flex', gap: '1.5rem', justifyContent: 'center' }}>
-          <button 
-            className="btn-primary" 
+          <button
+            className="btn-primary"
             onClick={() => navigate('/explore')}
             style={{
               padding: isMobile ? '1rem 2rem' : '1.2rem 3rem',
